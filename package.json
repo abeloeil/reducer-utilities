@@ -1,6 +1,6 @@
 {
   "name": "reducer-utilities",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a bunch of utilities function for redux reducer",
   "main": "dist/index.js",
   "repository": "git@github.com:ABeloeil/reducer-utilities.git",

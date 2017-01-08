@@ -5,7 +5,7 @@
  * @param newValues: {}
  * @returns {*}
  */
-export function updateObject(oldObject, newValues) {
+exports.updateObject = function updateObject(oldObject, newValues) {
     return Object.assign({}, oldObject, newValues);
 }
 
@@ -16,7 +16,7 @@ export function updateObject(oldObject, newValues) {
  * @param newValues
  * @returns {*}
  */
-export function updateArray(oldArray, newValues) {
+exports.updateArray = function updateArray(oldArray, newValues) {
     return Object.assign([], oldArray, newValues);
 }
 
@@ -28,7 +28,7 @@ export function updateArray(oldArray, newValues) {
  * @param updateItemCallback: fn()
  * @returns {*}
  */
-export function updateItemInArray(array, itemId, updateItemCallback) {
+exports.updateItemInArray =  function updateItemInArray(array, itemId, updateItemCallback) {
     return array.map(item => {
         if (item.id !== itemId) {
             return item;
@@ -44,7 +44,7 @@ export function updateItemInArray(array, itemId, updateItemCallback) {
  * @param initialState: []|{}
  * @param handlers: {}
  */
-export function createReducer(initialState, handlers) {
+exports.createReducer = function createReducer(initialState, handlers) {
     return function reducer(state = initialState, action) {
         if (handlers.hasOwnProperty(action.type)) {
             return handlers[action.type](state, action);
