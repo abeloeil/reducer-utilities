@@ -2,11 +2,8 @@
   "name": "reducer-utilities",
   "version": "1.0.1",
   "description": "a bunch of utilities function for redux reducer",
-  "main": "dist/index.js",
+  "main": "index.js",
   "repository": "git@github.com:ABeloeil/reducer-utilities.git",
-  "author": "ABeloeil",
-  "license": "MIT",
-  "scripts": {
-    "build": "node_modules/.bin/babel src --out-dir dist"
-  }
+  "author": "ABeloeil <arnaud.beloeil@gmail.com>",
+  "license": "MIT"
 }
