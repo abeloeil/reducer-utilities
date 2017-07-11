@@ -46,7 +46,8 @@ module.exports = {
    * @param handlers: {}
    */
   createReducer: function (initialState, handlers) {
-      return function reducer(state = initialState, action) {
+      return function reducer(state, action) {
+          state = state === undefined ? initialState : state;
           if (handlers.hasOwnProperty(action.type)) {
               return handlers[action.type](state, action);
           } else {
